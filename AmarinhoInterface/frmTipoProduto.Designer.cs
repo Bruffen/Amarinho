@@ -28,11 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.tableTipoProduto = new System.Windows.Forms.DataGridView();
+            this.btnRemoveProduto = new System.Windows.Forms.Button();
+            this.btnAddTipoProduto = new System.Windows.Forms.Button();
+            this.btnVoltarMenuProdutoII = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.tableTipoProduto)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tableTipoProduto
+            // 
+            this.tableTipoProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableTipoProduto.Location = new System.Drawing.Point(27, 38);
+            this.tableTipoProduto.Name = "tableTipoProduto";
+            this.tableTipoProduto.Size = new System.Drawing.Size(437, 226);
+            this.tableTipoProduto.TabIndex = 0;
+            // 
+            // btnRemoveProduto
+            // 
+            this.btnRemoveProduto.Location = new System.Drawing.Point(217, 307);
+            this.btnRemoveProduto.Name = "btnRemoveProduto";
+            this.btnRemoveProduto.Size = new System.Drawing.Size(118, 41);
+            this.btnRemoveProduto.TabIndex = 1;
+            this.btnRemoveProduto.Text = "Remover";
+            this.btnRemoveProduto.UseVisualStyleBackColor = true;
+            // 
+            // btnAddTipoProduto
+            // 
+            this.btnAddTipoProduto.Location = new System.Drawing.Point(363, 307);
+            this.btnAddTipoProduto.Name = "btnAddTipoProduto";
+            this.btnAddTipoProduto.Size = new System.Drawing.Size(118, 41);
+            this.btnAddTipoProduto.TabIndex = 1;
+            this.btnAddTipoProduto.Text = "Adicionar";
+            this.btnAddTipoProduto.UseVisualStyleBackColor = true;
+            // 
+            // btnVoltarMenuProdutoII
+            // 
+            this.btnVoltarMenuProdutoII.Location = new System.Drawing.Point(13, 307);
+            this.btnVoltarMenuProdutoII.Name = "btnVoltarMenuProdutoII";
+            this.btnVoltarMenuProdutoII.Size = new System.Drawing.Size(89, 41);
+            this.btnVoltarMenuProdutoII.TabIndex = 2;
+            this.btnVoltarMenuProdutoII.Text = "Voltar";
+            this.btnVoltarMenuProdutoII.UseVisualStyleBackColor = true;
+            // 
+            // frmTipoProduto
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "frmTipoProduto";
+            this.ClientSize = new System.Drawing.Size(493, 360);
+            this.Controls.Add(this.btnVoltarMenuProdutoII);
+            this.Controls.Add(this.btnAddTipoProduto);
+            this.Controls.Add(this.btnRemoveProduto);
+            this.Controls.Add(this.tableTipoProduto);
+            this.Name = "frmTipoProduto";
+            this.Text = "Tipo de Produto";
+            ((System.ComponentModel.ISupportInitialize)(this.tableTipoProduto)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView tableTipoProduto;
+        private System.Windows.Forms.Button btnRemoveProduto;
+        private System.Windows.Forms.Button btnAddTipoProduto;
+        private System.Windows.Forms.Button btnVoltarMenuProdutoII;
     }
 }

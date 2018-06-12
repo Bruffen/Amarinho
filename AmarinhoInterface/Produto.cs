@@ -32,5 +32,10 @@ namespace AmarinhoInterface
             this.tableAdapterManager.UpdateAll(this.amarinhoDataSet);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,20 +60,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmarinhoDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AmarinhoDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataBase.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="frmCasta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmCasta.Designer.cs">
+      <DependentUpon>frmCasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCastas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCastas.Designer.cs">
+      <DependentUpon>frmCastas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInserirProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInserirProduto.Designer.cs">
+      <DependentUpon>frmInserirProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoProduto.Designer.cs">
+      <DependentUpon>frmTipoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto.Designer.cs">
+      <DependentUpon>Produto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCasta.resx">
+      <DependentUpon>frmCasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCastas.resx">
+      <DependentUpon>frmCastas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInserirProduto.resx">
+      <DependentUpon>frmInserirProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoProduto.resx">
+      <DependentUpon>frmTipoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto.resx">
+      <DependentUpon>Produto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,17 +116,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="AmarinhoDataSet.xsc">
-      <DependentUpon>AmarinhoDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="AmarinhoDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AmarinhoDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="AmarinhoDataSet.xss">
-      <DependentUpon>AmarinhoDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
