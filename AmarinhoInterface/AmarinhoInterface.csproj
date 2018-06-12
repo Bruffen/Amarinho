@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmarinhoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmarinhoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="AmarinhoDataSet.xsc">
+      <DependentUpon>AmarinhoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AmarinhoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AmarinhoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AmarinhoDataSet.xss">
+      <DependentUpon>AmarinhoDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

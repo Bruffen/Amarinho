@@ -16,21 +16,5 @@ namespace AmarinhoInterface
         {
             InitializeComponent();
         }
-
-        private void area_EspecializacaoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.area_EspecializacaoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.amarinhoDataSet);
-
-        }
-
-        private void area_EspecializacaoBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.area_EspecializacaoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.amarinhoDataSet);
-
-        }
     }
 }
