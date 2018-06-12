@@ -1,6 +1,6 @@
 ﻿namespace AmarinhoInterface
 {
-    partial class Form1
+    partial class Produto
     {
         /// <summary>
         /// Required designer variable.
@@ -70,6 +70,7 @@
             this.Controls.Add(this.btnMTipoProduto);
             this.Controls.Add(this.btnMCastas);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

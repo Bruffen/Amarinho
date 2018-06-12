@@ -16,5 +16,10 @@ namespace AmarinhoInterface
         {
             InitializeComponent();
         }
+
+        private void frmInserirProduto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

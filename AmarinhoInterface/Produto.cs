@@ -10,30 +10,19 @@ using System.Windows.Forms;
 
 namespace AmarinhoInterface
 {
-    public partial class Form1 : Form
+    public partial class Produto : Form
     {
-        public Form1()
+        public Produto()
         {
             InitializeComponent();
         }
 
-        private void area_EspecializacaoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.area_EspecializacaoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.amarinhoDataSet);
-
-        }
-
-        private void area_EspecializacaoBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.area_EspecializacaoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.amarinhoDataSet);
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

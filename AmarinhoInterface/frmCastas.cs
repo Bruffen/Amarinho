@@ -16,5 +16,10 @@ namespace AmarinhoInterface
         {
             InitializeComponent();
         }
+
+        private void frmCastas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

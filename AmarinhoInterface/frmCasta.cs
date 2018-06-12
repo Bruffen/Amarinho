@@ -21,5 +21,10 @@ namespace AmarinhoInterface
         {
 
         }
+
+        private void frmCasta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
