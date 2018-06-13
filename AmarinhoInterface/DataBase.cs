@@ -13,11 +13,13 @@ namespace AmarinhoInterface
     {
         public SqlConnection DataBaseConnection;
 
-        public DataBase()
+      /*  public DataBase()
         {
             DataBaseConnection = new SqlConnection("Data Source = localhost; Initial Catalog = Amarinho; Integrated Security = True");
             DataBaseConnection.Open();
+            
         }
+
 
         public void AdicionarCasta(int id, string nome, string local, string tipo, string desc)
         {
@@ -61,6 +63,6 @@ namespace AmarinhoInterface
             DataTable table = new DataTable();
             table.Load(data);
             return table;
-        }
+        }*/
     }
 }

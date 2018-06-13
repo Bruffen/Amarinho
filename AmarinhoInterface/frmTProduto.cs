@@ -29,5 +29,12 @@ namespace AmarinhoInterface
         {
 
         }
+
+        private void btnVoltar4_Click(object sender, EventArgs e)
+        {
+            frmListaProduto listaProduto = new frmListaProduto(db);
+            Close();
+            listaProduto.Show();
+        }
     }
 }
