@@ -12,21 +12,23 @@ namespace AmarinhoInterface
 {
     public partial class Produto : Form
     {
-        public Produto()
+        private DataBase db;
+        public Produto(DataBase db)
         {
             InitializeComponent();
+            this.db = db;
         }
 
         private void casta_Click(object sender, EventArgs e)
         {
-            frmCastas casta = new frmCastas();
+            frmCastas casta = new frmCastas(db);
             Hide();
             casta.ShowDialog();
         }
 
         private void tipoProduto_Click(object sender, EventArgs e)
         {
-            frmTipoProduto tipoProduto = new frmTipoProduto();
+            frmTipoProduto tipoProduto = new frmTipoProduto(db);
             Hide();
             tipoProduto.ShowDialog();
         }
@@ -45,4 +47,4 @@ namespace AmarinhoInterface
 
 
 
-      
+      

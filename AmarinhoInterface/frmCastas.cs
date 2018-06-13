@@ -12,9 +12,11 @@ namespace AmarinhoInterface
 {
     public partial class frmCastas : Form
     {
-        public frmCastas()
+        private DataBase db;
+        public frmCastas(DataBase db)
         {
             InitializeComponent();
+            this.db = db;
         }
 
         private void frmCastas_Load(object sender, EventArgs e)
@@ -24,7 +26,7 @@ namespace AmarinhoInterface
 
         private void btnAddCasta_Click(object sender, EventArgs e)
         {
-            frmCasta addcasta = new frmCasta();
+            frmCasta addcasta = new frmCasta(db);
             addcasta.ShowDialog();
             Hide();
         }
@@ -35,7 +37,7 @@ namespace AmarinhoInterface
                 , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                
-                Produto voltaMenu = new Produto();
+                Produto voltaMenu = new Produto(db);
                 voltaMenu.Show();
                 Close();
             }

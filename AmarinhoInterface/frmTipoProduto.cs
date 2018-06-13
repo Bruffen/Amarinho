@@ -12,9 +12,12 @@ namespace AmarinhoInterface
 {
     public partial class frmTipoProduto : Form
     {
-        public frmTipoProduto()
+        private DataBase db;
+
+        public frmTipoProduto(DataBase db)
         {
             InitializeComponent();
+            this.db = db;
         }
 
         private void frmTipoProduto_Load(object sender, EventArgs e)
@@ -28,7 +31,7 @@ namespace AmarinhoInterface
                , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
 
-                Produto voltaMenu = new Produto();
+                Produto voltaMenu = new Produto(db);
                 voltaMenu.Show();
                 Close();
             }

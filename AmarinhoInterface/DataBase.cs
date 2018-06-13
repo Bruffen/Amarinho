@@ -11,7 +11,7 @@ namespace AmarinhoInterface
 {
     public class DataBase
     {
-        private SqlConnection DataBaseConnection;
+        public SqlConnection DataBaseConnection;
 
         public DataBase()
         {
@@ -31,6 +31,16 @@ namespace AmarinhoInterface
             String query = "Insert into Tipo_Produto " +
                 "values ({id}, '{desc}', {teor}, {capacidade})";
             SqlCommand addCasta = new SqlCommand(query, DataBaseConnection);
+        }
+
+        public DataTable MostarTudo(string nomeTabela)
+        {
+            String query = "select * from {nomeTabela}";
+            SqlCommand command = new SqlCommand(query, DataBaseConnection);
+            SqlDataReader data = command.ExecuteReader();
+            DataTable table = new DataTable();
+            table.Load(data);
+            return table;
         }
     }
 }
