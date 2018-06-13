@@ -26,9 +26,11 @@ namespace AmarinhoInterface
 
         private void btnAddCasta_Click(object sender, EventArgs e)
         {
+
             frmCasta addcasta = new frmCasta(db);
             addcasta.ShowDialog();
             Hide();
+           
         }
 
         private void btnVoltarMenuProduto_Click(object sender, EventArgs e)
@@ -37,9 +39,13 @@ namespace AmarinhoInterface
                 , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                
+
+                
+
                 Produto voltaMenu = new Produto(db);
-                voltaMenu.Show();
                 Close();
+                voltaMenu.Show();
+               
             }
            
             
