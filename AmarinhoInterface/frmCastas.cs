@@ -41,9 +41,7 @@ namespace AmarinhoInterface
             {
                
 
-                
-
-                Produto voltaMenu = new Produto(db);
+                frmTProduto voltaMenu = new frmTProduto(db);
                 Close();
                 voltaMenu.Show();
                
