@@ -38,6 +38,8 @@
             this.TxtLocalOrigem = new System.Windows.Forms.TextBox();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.btnVoltarMenuCastas = new System.Windows.Forms.Button();
+            this.lbIdCasta = new System.Windows.Forms.Label();
+            this.txtIDCasta = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnAddNCasta
@@ -125,15 +127,33 @@
             this.btnVoltarMenuCastas.UseVisualStyleBackColor = true;
             this.btnVoltarMenuCastas.Click += new System.EventHandler(this.btnVoltarMenuCastas_Click);
             // 
+            // lbIdCasta
+            // 
+            this.lbIdCasta.AutoSize = true;
+            this.lbIdCasta.Location = new System.Drawing.Point(441, 21);
+            this.lbIdCasta.Name = "lbIdCasta";
+            this.lbIdCasta.Size = new System.Drawing.Size(16, 13);
+            this.lbIdCasta.TabIndex = 4;
+            this.lbIdCasta.Text = "Id";
+            // 
+            // txtIDCasta
+            // 
+            this.txtIDCasta.Location = new System.Drawing.Point(444, 37);
+            this.txtIDCasta.Name = "txtIDCasta";
+            this.txtIDCasta.Size = new System.Drawing.Size(46, 20);
+            this.txtIDCasta.TabIndex = 2;
+            // 
             // frmCasta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 356);
+            this.Controls.Add(this.lbIdCasta);
             this.Controls.Add(this.btnVoltarMenuCastas);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.TxtLocalOrigem);
             this.Controls.Add(this.txtTipoCasta);
+            this.Controls.Add(this.txtIDCasta);
             this.Controls.Add(this.txtNomeCasta);
             this.Controls.Add(this.txtDescricaoCasta);
             this.Controls.Add(this.lbLocalOrigem);
@@ -160,5 +180,7 @@
         private System.Windows.Forms.TextBox TxtLocalOrigem;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Button btnVoltarMenuCastas;
+        private System.Windows.Forms.Label lbIdCasta;
+        private System.Windows.Forms.TextBox txtIDCasta;
     }
 }
