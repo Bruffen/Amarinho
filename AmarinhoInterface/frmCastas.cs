@@ -25,8 +25,9 @@ namespace AmarinhoInterface
         private void btnAddCasta_Click(object sender, EventArgs e)
         {
             frmCasta addcasta = new frmCasta();
-            addcasta.ShowDialog();
             Hide();
+            addcasta.ShowDialog();
+           
         }
 
         private void btnVoltarMenuProduto_Click(object sender, EventArgs e)
@@ -36,8 +37,9 @@ namespace AmarinhoInterface
             {
                
                 Produto voltaMenu = new Produto();
+                 Close();
                 voltaMenu.Show();
-                Close();
+               
             }
            
             

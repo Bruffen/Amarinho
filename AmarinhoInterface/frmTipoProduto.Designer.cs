@@ -60,6 +60,7 @@
             this.btnAddTipoProduto.TabIndex = 1;
             this.btnAddTipoProduto.Text = "Adicionar";
             this.btnAddTipoProduto.UseVisualStyleBackColor = true;
+            this.btnAddTipoProduto.Click += new System.EventHandler(this.btnAddTipoProduto_Click);
             // 
             // btnVoltarMenuProdutoII
             // 

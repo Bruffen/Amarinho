@@ -29,9 +29,15 @@ namespace AmarinhoInterface
             {
 
                 Produto voltaMenu = new Produto();
-                voltaMenu.Show();
                 Close();
+                voltaMenu.ShowDialog();
+                
             }
+        }
+
+        private void btnAddTipoProduto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

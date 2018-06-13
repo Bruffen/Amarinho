@@ -30,8 +30,9 @@ namespace AmarinhoInterface
         private void btnVoltarMenuCastas_Click(object sender, EventArgs e)
         {
             frmCastas voltaCastas = new frmCastas();
+             Close();
             voltaCastas.Show();
-            Close();
+           
             
         }
     }
