@@ -38,6 +38,8 @@
             this.TxtLocalOrigem = new System.Windows.Forms.TextBox();
             this.txtDescricao = new System.Windows.Forms.TextBox();
             this.btnVoltarMenuCastas = new System.Windows.Forms.Button();
+            this.lbIdCasta = new System.Windows.Forms.Label();
+            this.txtIDCasta = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnAddNCasta
@@ -136,8 +138,6 @@
             this.btnVoltarMenuCastas.UseVisualStyleBackColor = true;
             this.btnVoltarMenuCastas.Click += new System.EventHandler(this.btnVoltarMenuCastas_Click);
             // 
-<<<<<<< HEAD
-=======
             // lbIdCasta
             // 
             this.lbIdCasta.AutoSize = true;
@@ -156,21 +156,17 @@
             this.txtIDCasta.Size = new System.Drawing.Size(60, 22);
             this.txtIDCasta.TabIndex = 2;
             // 
->>>>>>> master
             // frmCasta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(509, 356);
-=======
             this.ClientSize = new System.Drawing.Size(679, 438);
             this.Controls.Add(this.lbIdCasta);
->>>>>>> master
             this.Controls.Add(this.btnVoltarMenuCastas);
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.TxtLocalOrigem);
             this.Controls.Add(this.txtTipoCasta);
+            this.Controls.Add(this.txtIDCasta);
             this.Controls.Add(this.txtNomeCasta);
             this.Controls.Add(this.txtDescricaoCasta);
             this.Controls.Add(this.lbLocalOrigem);
@@ -198,5 +194,7 @@
         private System.Windows.Forms.TextBox TxtLocalOrigem;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Button btnVoltarMenuCastas;
+        private System.Windows.Forms.Label lbIdCasta;
+        private System.Windows.Forms.TextBox txtIDCasta;
     }
 }
