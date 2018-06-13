@@ -22,7 +22,7 @@ namespace AmarinhoInterface
 
         private void frmTipoProduto_Load(object sender, EventArgs e)
         {
-
+            tableTipoProduto.DataSource = db.MostarTudo("Tipo_Produto");
         }
 
         private void btnVoltarMenuProdutoII_Click(object sender, EventArgs e)
@@ -39,7 +39,15 @@ namespace AmarinhoInterface
 
         private void btnAddTipoProduto_Click(object sender, EventArgs e)
         {
+            frmInserirProduto inserirTipoProduto = new frmInserirProduto(db);
+            Close();
+            inserirTipoProduto.Show();
+        }
 
+        private void btnRemoveProduto_Click(object sender, EventArgs e)
+        {
+            db.RemoverTipoProduto(int.Parse(tableTipoProduto.SelectedRows[0].Cells["Tipo_Produto_ID"].Value.ToString()));
+            frmTipoProduto_Load(sender, e);
         }
     }
 }

@@ -17,9 +17,7 @@ namespace AmarinhoInterface
         {
             DataBaseConnection = new SqlConnection("Data Source = localhost; Initial Catalog = Amarinho; Integrated Security = True");
             DataBaseConnection.Open();
-            
         }
-
 
         public void AdicionarCasta(int id, string nome, string local, string tipo, string desc)
         {
@@ -31,7 +29,7 @@ namespace AmarinhoInterface
             addCasta.ExecuteNonQuery();
         }
 
-        public void AdicionarTipoProduto(int id, string desc, float teor, float capacidade)
+        public void AdicionarTipoProduto(int id, string desc, int teor, float capacidade)
         {
             String query =
                 "Set Identity_Insert Tipo_Produto ON " +
@@ -45,7 +43,6 @@ namespace AmarinhoInterface
         {
             int ano = DateTime.Now.Year;
             String query =
-                "Set Identity_Insert Produto ON " +
                 "Insert Produto(Ano_Epoca, Casta_ID, Tipo_Produto_Id) " +
                 "values (" + ano + ", " + castaID + ", " + tipoProdutoID + ")";
             SqlCommand addProduto = new SqlCommand(query, DataBaseConnection);

@@ -42,7 +42,7 @@
             // 
             this.comboBoxCasta.FormattingEnabled = true;
             this.comboBoxCasta.Location = new System.Drawing.Point(16, 53);
-            this.comboBoxCasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxCasta.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCasta.Name = "comboBoxCasta";
             this.comboBoxCasta.Size = new System.Drawing.Size(160, 24);
             this.comboBoxCasta.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             this.comboBoxTProduto.FormattingEnabled = true;
             this.comboBoxTProduto.Location = new System.Drawing.Point(228, 53);
-            this.comboBoxTProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxTProduto.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxTProduto.Name = "comboBoxTProduto";
             this.comboBoxTProduto.Size = new System.Drawing.Size(160, 24);
             this.comboBoxTProduto.TabIndex = 2;
@@ -81,7 +81,7 @@
             // btnInsertCasta
             // 
             this.btnInsertCasta.Location = new System.Drawing.Point(35, 150);
-            this.btnInsertCasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInsertCasta.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsertCasta.Name = "btnInsertCasta";
             this.btnInsertCasta.Size = new System.Drawing.Size(116, 65);
             this.btnInsertCasta.TabIndex = 3;
@@ -92,7 +92,7 @@
             // btnInsertTipoProduto
             // 
             this.btnInsertTipoProduto.Location = new System.Drawing.Point(261, 150);
-            this.btnInsertTipoProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInsertTipoProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsertTipoProduto.Name = "btnInsertTipoProduto";
             this.btnInsertTipoProduto.Size = new System.Drawing.Size(116, 65);
             this.btnInsertTipoProduto.TabIndex = 3;
@@ -103,17 +103,18 @@
             // btnInsertProduto
             // 
             this.btnInsertProduto.Location = new System.Drawing.Point(127, 241);
-            this.btnInsertProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInsertProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsertProduto.Name = "btnInsertProduto";
             this.btnInsertProduto.Size = new System.Drawing.Size(171, 65);
             this.btnInsertProduto.TabIndex = 3;
             this.btnInsertProduto.Text = "Inserir Novo Produto";
             this.btnInsertProduto.UseVisualStyleBackColor = true;
+            this.btnInsertProduto.Click += new System.EventHandler(this.btnInsertProduto_Click);
             // 
             // btnVoltar4
             // 
             this.btnVoltar4.Location = new System.Drawing.Point(16, 293);
-            this.btnVoltar4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltar4.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar4.Name = "btnVoltar4";
             this.btnVoltar4.Size = new System.Drawing.Size(100, 28);
             this.btnVoltar4.TabIndex = 4;
@@ -134,7 +135,7 @@
             this.Controls.Add(this.lbTipoProduto);
             this.Controls.Add(this.lbCasta);
             this.Controls.Add(this.comboBoxCasta);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTProduto";
             this.Text = "frmTProduto";
             this.Load += new System.EventHandler(this.frmTProduto_Load);

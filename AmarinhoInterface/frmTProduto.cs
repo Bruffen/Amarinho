@@ -27,7 +27,13 @@ namespace AmarinhoInterface
 
         private void frmTProduto_Load(object sender, EventArgs e)
         {
+            comboBoxCasta.DataSource = db.MostarTudo("Casta");
+            comboBoxCasta.ValueMember = "Casta_ID";
+            comboBoxCasta.DisplayMember = "Nome_Casta";
 
+            comboBoxTProduto.DataSource = db.MostarTudo("Tipo_Produto");
+            comboBoxTProduto.ValueMember = "Tipo_Produto_ID";
+            comboBoxTProduto.DisplayMember = "Desc_Produto";
         }
 
         private void btnVoltar4_Click(object sender, EventArgs e)
@@ -46,16 +52,19 @@ namespace AmarinhoInterface
 
         private void btnInsertTipoProduto_Click(object sender, EventArgs e)
         {
-            frmInserirProduto inserirProduto = new frmInserirProduto(db);
+            frmTipoProduto inserirProduto = new frmTipoProduto(db);
             Hide();
             inserirProduto.ShowDialog();
         }
 
         private void comboBoxCasta_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBoxCasta.DataSource = db.MostarTudo("Casta");
-            comboBoxCasta.ValueMember = "Casta_ID";
-            comboBoxCasta.DisplayMember = "Nome_Casta";
+
+        }
+
+        private void btnInsertProduto_Click(object sender, EventArgs e)
+        {
+            db.AdicionarProduto(int.Parse(comboBoxCasta.SelectedValue.ToString()), int.Parse(comboBoxTProduto.SelectedValue.ToString()));
         }
     }
 }

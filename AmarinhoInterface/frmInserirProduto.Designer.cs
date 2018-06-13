@@ -31,9 +31,9 @@
             this.lbNomeProduto = new System.Windows.Forms.Label();
             this.lbTeorAlco = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxTipo = new System.Windows.Forms.TextBox();
+            this.textBoxTeor = new System.Windows.Forms.TextBox();
+            this.textCapacidade = new System.Windows.Forms.TextBox();
             this.btnInserirProduto = new System.Windows.Forms.Button();
             this.btnVoltarTipoProduto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,29 +70,29 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Capacidade";
             // 
-            // textBox1
+            // textBoxTipo
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 52);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBoxTipo.Location = new System.Drawing.Point(125, 52);
+            this.textBoxTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTipo.Name = "textBoxTipo";
+            this.textBoxTipo.Size = new System.Drawing.Size(189, 22);
+            this.textBoxTipo.TabIndex = 1;
             // 
-            // textBox2
+            // textBoxTeor
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 84);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(88, 22);
-            this.textBox2.TabIndex = 1;
+            this.textBoxTeor.Location = new System.Drawing.Point(125, 84);
+            this.textBoxTeor.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTeor.Name = "textBoxTeor";
+            this.textBoxTeor.Size = new System.Drawing.Size(88, 22);
+            this.textBoxTeor.TabIndex = 1;
             // 
-            // textBox3
+            // textCapacidade
             // 
-            this.textBox3.Location = new System.Drawing.Point(125, 116);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(88, 22);
-            this.textBox3.TabIndex = 1;
+            this.textCapacidade.Location = new System.Drawing.Point(125, 116);
+            this.textCapacidade.Margin = new System.Windows.Forms.Padding(4);
+            this.textCapacidade.Name = "textCapacidade";
+            this.textCapacidade.Size = new System.Drawing.Size(88, 22);
+            this.textCapacidade.TabIndex = 1;
             // 
             // btnInserirProduto
             // 
@@ -103,6 +103,7 @@
             this.btnInserirProduto.TabIndex = 2;
             this.btnInserirProduto.Text = "Inserir Novo Produto";
             this.btnInserirProduto.UseVisualStyleBackColor = true;
+            this.btnInserirProduto.Click += new System.EventHandler(this.btnInserirProduto_Click);
             // 
             // btnVoltarTipoProduto
             // 
@@ -140,9 +141,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVoltarTipoProduto);
             this.Controls.Add(this.btnInserirProduto);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textCapacidade);
+            this.Controls.Add(this.textBoxTeor);
+            this.Controls.Add(this.textBoxTipo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbTeorAlco);
             this.Controls.Add(this.lbNomeProduto);
@@ -160,9 +161,9 @@
         private System.Windows.Forms.Label lbNomeProduto;
         private System.Windows.Forms.Label lbTeorAlco;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxTipo;
+        private System.Windows.Forms.TextBox textBoxTeor;
+        private System.Windows.Forms.TextBox textCapacidade;
         private System.Windows.Forms.Button btnInserirProduto;
         private System.Windows.Forms.Button btnVoltarTipoProduto;
         private System.Windows.Forms.Label label1;

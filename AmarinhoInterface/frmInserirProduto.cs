@@ -26,9 +26,15 @@ namespace AmarinhoInterface
 
         private void btnVoltarTipoProduto_Click(object sender, EventArgs e)
         {
-            frmTProduto voltaMenu = new frmTProduto(db);
+            frmTipoProduto voltaMenu = new frmTipoProduto(db);
             Close();
             voltaMenu.Show();
+        }
+
+        private void btnInserirProduto_Click(object sender, EventArgs e)
+        {
+            db.AdicionarTipoProduto(int.Parse(textBoxId.Text), textBoxTipo.Text, int.Parse(textBoxTeor.Text), float.Parse(textCapacidade.Text));
+            btnVoltarTipoProduto_Click(sender, e);
         }
     }
 }
