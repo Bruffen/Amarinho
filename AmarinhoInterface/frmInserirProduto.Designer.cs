@@ -36,22 +36,24 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnInserirProduto = new System.Windows.Forms.Button();
             this.btnVoltarTipoProduto = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxId = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbNomeProduto
             // 
             this.lbNomeProduto.AutoSize = true;
-            this.lbNomeProduto.Location = new System.Drawing.Point(17, 32);
+            this.lbNomeProduto.Location = new System.Drawing.Point(18, 55);
             this.lbNomeProduto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNomeProduto.Name = "lbNomeProduto";
-            this.lbNomeProduto.Size = new System.Drawing.Size(119, 17);
+            this.lbNomeProduto.Size = new System.Drawing.Size(90, 17);
             this.lbNomeProduto.TabIndex = 0;
-            this.lbNomeProduto.Text = "Nome do Produto";
+            this.lbNomeProduto.Text = "Tipo Produto";
             // 
             // lbTeorAlco
             // 
             this.lbTeorAlco.AutoSize = true;
-            this.lbTeorAlco.Location = new System.Drawing.Point(17, 74);
+            this.lbTeorAlco.Location = new System.Drawing.Point(18, 87);
             this.lbTeorAlco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTeorAlco.Name = "lbTeorAlco";
             this.lbTeorAlco.Size = new System.Drawing.Size(98, 17);
@@ -70,7 +72,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(147, 32);
+            this.textBox1.Location = new System.Drawing.Point(125, 52);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(189, 22);
@@ -78,7 +80,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 70);
+            this.textBox2.Location = new System.Drawing.Point(125, 84);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(88, 22);
@@ -111,12 +113,31 @@
             this.btnVoltarTipoProduto.TabIndex = 3;
             this.btnVoltarTipoProduto.Text = "Voltar";
             this.btnVoltarTipoProduto.UseVisualStyleBackColor = true;
+            this.btnVoltarTipoProduto.Click += new System.EventHandler(this.btnVoltarTipoProduto_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Id";
+            // 
+            // textBoxId
+            // 
+            this.textBoxId.Location = new System.Drawing.Point(125, 23);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(88, 22);
+            this.textBoxId.TabIndex = 5;
             // 
             // frmInserirProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 206);
+            this.Controls.Add(this.textBoxId);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVoltarTipoProduto);
             this.Controls.Add(this.btnInserirProduto);
             this.Controls.Add(this.textBox3);
@@ -127,7 +148,7 @@
             this.Controls.Add(this.lbNomeProduto);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInserirProduto";
-            this.Text = "Novo Produto";
+            this.Text = "Novo Tipo Produto";
             this.Load += new System.EventHandler(this.frmInserirProduto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -144,5 +165,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnInserirProduto;
         private System.Windows.Forms.Button btnVoltarTipoProduto;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxId;
     }
 }

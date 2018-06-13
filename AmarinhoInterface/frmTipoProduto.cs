@@ -30,13 +30,9 @@ namespace AmarinhoInterface
             if (MessageBox.Show("Tem a certeza que pretende sair?", "Sair?"
                , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
-
-
-                Produto voltaMenu = new Produto(db);
+                frmTProduto voltaMenu = new frmTProduto(db);
                 voltaMenu.Show();
                 Close();
-          
-                
             }
         }
 
