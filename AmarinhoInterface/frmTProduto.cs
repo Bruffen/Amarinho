@@ -36,5 +36,12 @@ namespace AmarinhoInterface
             Close();
             listaProduto.Show();
         }
+
+        private void comboBoxCasta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxCasta.DataSource = db.MostarTudo("Casta");
+            comboBoxCasta.ValueMember = "Casta_ID";
+            comboBoxCasta.DisplayMember = "Nome_Casta";
+        }
     }
 }

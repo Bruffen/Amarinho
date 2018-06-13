@@ -22,7 +22,7 @@ namespace AmarinhoInterface
 
         private void frmCastas_Load(object sender, EventArgs e)
         {
-           // dataGridView1.DataSource = db.MostarTudo("Casta");
+           dataGridView1.DataSource = db.MostarTudo("Casta");
         }
 
         private void btnAddCasta_Click(object sender, EventArgs e)

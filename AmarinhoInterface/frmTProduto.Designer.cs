@@ -41,70 +41,79 @@
             // comboBoxCasta
             // 
             this.comboBoxCasta.FormattingEnabled = true;
-            this.comboBoxCasta.Location = new System.Drawing.Point(12, 43);
+            this.comboBoxCasta.Location = new System.Drawing.Point(16, 53);
+            this.comboBoxCasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxCasta.Name = "comboBoxCasta";
-            this.comboBoxCasta.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCasta.Size = new System.Drawing.Size(160, 24);
             this.comboBoxCasta.TabIndex = 0;
+            this.comboBoxCasta.SelectedIndexChanged += new System.EventHandler(this.comboBoxCasta_SelectedIndexChanged);
             // 
             // lbCasta
             // 
             this.lbCasta.AutoSize = true;
-            this.lbCasta.Location = new System.Drawing.Point(13, 27);
+            this.lbCasta.Location = new System.Drawing.Point(17, 33);
+            this.lbCasta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCasta.Name = "lbCasta";
-            this.lbCasta.Size = new System.Drawing.Size(34, 13);
+            this.lbCasta.Size = new System.Drawing.Size(44, 17);
             this.lbCasta.TabIndex = 1;
             this.lbCasta.Text = "Casta";
             // 
             // comboBoxTProduto
             // 
             this.comboBoxTProduto.FormattingEnabled = true;
-            this.comboBoxTProduto.Location = new System.Drawing.Point(171, 43);
+            this.comboBoxTProduto.Location = new System.Drawing.Point(228, 53);
+            this.comboBoxTProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxTProduto.Name = "comboBoxTProduto";
-            this.comboBoxTProduto.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTProduto.Size = new System.Drawing.Size(160, 24);
             this.comboBoxTProduto.TabIndex = 2;
             this.comboBoxTProduto.SelectedIndexChanged += new System.EventHandler(this.comboBoxTProduto_SelectedIndexChanged);
             // 
             // lbTipoProduto
             // 
             this.lbTipoProduto.AutoSize = true;
-            this.lbTipoProduto.Location = new System.Drawing.Point(224, 27);
+            this.lbTipoProduto.Location = new System.Drawing.Point(299, 33);
+            this.lbTipoProduto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTipoProduto.Name = "lbTipoProduto";
-            this.lbTipoProduto.Size = new System.Drawing.Size(68, 13);
+            this.lbTipoProduto.Size = new System.Drawing.Size(90, 17);
             this.lbTipoProduto.TabIndex = 1;
             this.lbTipoProduto.Text = "Tipo Produto";
             // 
             // btnInsertCasta
             // 
-            this.btnInsertCasta.Location = new System.Drawing.Point(26, 122);
+            this.btnInsertCasta.Location = new System.Drawing.Point(35, 150);
+            this.btnInsertCasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInsertCasta.Name = "btnInsertCasta";
-            this.btnInsertCasta.Size = new System.Drawing.Size(87, 53);
+            this.btnInsertCasta.Size = new System.Drawing.Size(116, 65);
             this.btnInsertCasta.TabIndex = 3;
             this.btnInsertCasta.Text = "Inserir Nova Casta";
             this.btnInsertCasta.UseVisualStyleBackColor = true;
             // 
             // btnInsertTipoProduto
             // 
-            this.btnInsertTipoProduto.Location = new System.Drawing.Point(196, 122);
+            this.btnInsertTipoProduto.Location = new System.Drawing.Point(261, 150);
+            this.btnInsertTipoProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInsertTipoProduto.Name = "btnInsertTipoProduto";
-            this.btnInsertTipoProduto.Size = new System.Drawing.Size(87, 53);
+            this.btnInsertTipoProduto.Size = new System.Drawing.Size(116, 65);
             this.btnInsertTipoProduto.TabIndex = 3;
             this.btnInsertTipoProduto.Text = "Inserir Novo Tipo Produto";
             this.btnInsertTipoProduto.UseVisualStyleBackColor = true;
             // 
             // btnInsertProduto
             // 
-            this.btnInsertProduto.Location = new System.Drawing.Point(95, 196);
+            this.btnInsertProduto.Location = new System.Drawing.Point(127, 241);
+            this.btnInsertProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInsertProduto.Name = "btnInsertProduto";
-            this.btnInsertProduto.Size = new System.Drawing.Size(128, 53);
+            this.btnInsertProduto.Size = new System.Drawing.Size(171, 65);
             this.btnInsertProduto.TabIndex = 3;
             this.btnInsertProduto.Text = "Inserir Novo Produto";
             this.btnInsertProduto.UseVisualStyleBackColor = true;
             // 
             // btnVoltar4
             // 
-            this.btnVoltar4.Location = new System.Drawing.Point(12, 238);
+            this.btnVoltar4.Location = new System.Drawing.Point(16, 293);
+            this.btnVoltar4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltar4.Name = "btnVoltar4";
-            this.btnVoltar4.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar4.Size = new System.Drawing.Size(100, 28);
             this.btnVoltar4.TabIndex = 4;
             this.btnVoltar4.Text = "Voltar";
             this.btnVoltar4.UseVisualStyleBackColor = true;
@@ -112,9 +121,9 @@
             // 
             // frmTProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 273);
+            this.ClientSize = new System.Drawing.Size(415, 336);
             this.Controls.Add(this.btnVoltar4);
             this.Controls.Add(this.btnInsertTipoProduto);
             this.Controls.Add(this.btnInsertProduto);
@@ -123,6 +132,7 @@
             this.Controls.Add(this.lbTipoProduto);
             this.Controls.Add(this.lbCasta);
             this.Controls.Add(this.comboBoxCasta);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmTProduto";
             this.Text = "frmTProduto";
             this.Load += new System.EventHandler(this.frmTProduto_Load);

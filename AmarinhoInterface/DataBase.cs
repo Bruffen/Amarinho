@@ -13,7 +13,7 @@ namespace AmarinhoInterface
     {
         public SqlConnection DataBaseConnection;
 
-      /*  public DataBase()
+        public DataBase()
         {
             DataBaseConnection = new SqlConnection("Data Source = localhost; Initial Catalog = Amarinho; Integrated Security = True");
             DataBaseConnection.Open();
@@ -35,10 +35,21 @@ namespace AmarinhoInterface
         {
             String query =
                 "Set Identity_Insert Tipo_Produto ON " +
-                "Insert Tipo_Produto(Tipo_Produto_ID, Desc_Produto, Teor_Alcoolico, Capacidade_Produto " +
+                "Insert Tipo_Produto(Tipo_Produto_ID, Desc_Produto, Teor_Alcoolico, Capacidade_Produto) " +
                 "values (" + id + ", '" + desc + "', " + teor + ", " + capacidade + ")";
             SqlCommand addTipoProduto = new SqlCommand(query, DataBaseConnection);
             addTipoProduto.ExecuteNonQuery();
+        }
+
+        public void AdicionarProduto(int castaID, int tipoProdutoID)
+        {
+            int ano = DateTime.Now.Year;
+            String query =
+                "Set Identity_Insert Produto ON " +
+                "Insert Produto(Ano_Epoca, Casta_ID, Tipo_Produto_Id) " +
+                "values (" + ano + ", " + castaID + ", " + tipoProdutoID + ")";
+            SqlCommand addProduto = new SqlCommand(query, DataBaseConnection);
+            addProduto.ExecuteNonQuery();
         }
 
         public void RemoverCasta(int id)
@@ -63,6 +74,6 @@ namespace AmarinhoInterface
             DataTable table = new DataTable();
             table.Load(data);
             return table;
-        }*/
+        }
     }
 }

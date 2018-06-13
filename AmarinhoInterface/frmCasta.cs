@@ -31,18 +31,15 @@ namespace AmarinhoInterface
 
         private void btnVoltarMenuCastas_Click(object sender, EventArgs e)
         {
-
             frmCastas voltaCastas = new frmCastas(db);
             Close();
             voltaCastas.Show();
-           
-           
-            
         }
 
         private void btnAddNCasta_Click(object sender, EventArgs e)
         {
-          //  db.AdicionarCasta(int.Parse(txtIDCasta.Text), txtNomeCasta.Text, TxtLocalOrigem.Text, txtTipoCasta.Text, txtDescricao.Text);
+            db.AdicionarCasta(int.Parse(txtIDCasta.Text), txtNomeCasta.Text, TxtLocalOrigem.Text, txtTipoCasta.Text, txtDescricao.Text);
+            btnVoltarMenuCastas_Click(sender, e);
         }
     }
 }
