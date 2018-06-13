@@ -36,5 +36,20 @@ namespace AmarinhoInterface
             Close();
             listaProduto.Show();
         }
+
+        private void btnInsertCasta_Click(object sender, EventArgs e)
+        {
+            frmCastas vaiCastas = new frmCastas(db);
+            Hide();
+            vaiCastas.ShowDialog();
+        }
+
+        private void btnInsertTipoProduto_Click(object sender, EventArgs e)
+        {
+            frmInserirProduto inserirProduto = new frmInserirProduto(db);
+            Hide();
+            inserirProduto.ShowDialog();
+
+        }
     }
 }

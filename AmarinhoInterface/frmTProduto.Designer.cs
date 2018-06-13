@@ -81,6 +81,7 @@
             this.btnInsertCasta.TabIndex = 3;
             this.btnInsertCasta.Text = "Inserir Nova Casta";
             this.btnInsertCasta.UseVisualStyleBackColor = true;
+            this.btnInsertCasta.Click += new System.EventHandler(this.btnInsertCasta_Click);
             // 
             // btnInsertTipoProduto
             // 
@@ -90,6 +91,7 @@
             this.btnInsertTipoProduto.TabIndex = 3;
             this.btnInsertTipoProduto.Text = "Inserir Novo Tipo Produto";
             this.btnInsertTipoProduto.UseVisualStyleBackColor = true;
+            this.btnInsertTipoProduto.Click += new System.EventHandler(this.btnInsertTipoProduto_Click);
             // 
             // btnInsertProduto
             // 
