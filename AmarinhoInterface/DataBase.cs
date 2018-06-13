@@ -15,7 +15,7 @@ namespace AmarinhoInterface
 
         public DataBase()
         {
-            DataBaseConnection = new SqlConnection("Data Source = localhost; Initial Catalog = Amarinho; Integrated Security = True");
+            DataBaseConnection = new SqlConnection("Data Source = DESKTOP-TSNGFLN; Initial Catalog = Amarinho; Integrated Security = True");
             DataBaseConnection.Open();
         }
 

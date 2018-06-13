@@ -37,5 +37,10 @@ namespace AmarinhoInterface
            
             
         }
+
+        private void btnAddNCasta_Click(object sender, EventArgs e)
+        {
+            db.AdicionarCasta(int.Parse(txtIDCasta.Text), txtNomeCasta.Text, TxtLocalOrigem.Text, txtTipoCasta.Text, txtDescricao.Text);
+        }
     }
 }
