@@ -36,39 +36,29 @@ namespace AmarinhoInterface
             Close();
             listaProduto.Show();
         }
+
+        private void btnInsertCasta_Click(object sender, EventArgs e)
+        {
+            frmCastas vaiCastas = new frmCastas(db);
+            Hide();
+            vaiCastas.ShowDialog();
+        }
+
+        private void btnInsertTipoProduto_Click(object sender, EventArgs e)
+        {
+            frmInserirProduto inserirProduto = new frmInserirProduto(db);
+            Hide();
+            inserirProduto.ShowDialog();
+        }
+
+        private void comboBoxCasta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxCasta.DataSource = db.MostarTudo("Casta");
+            comboBoxCasta.ValueMember = "Casta_ID";
+            comboBoxCasta.DisplayMember = "Nome_Casta";
+        }
     }
 }
 
-        }
-
-        private void comboBoxTProduto_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmTProduto_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVoltar4_Click(object sender, EventArgs e)
-        {
-            frmListaProduto listaProduto = new frmListaProduto(db);
-            Close();
-            listaProduto.Show();
-        }
-
-        private void btnInsertCasta_Click(object sender, EventArgs e)
-        {
-            frmCastas vaiCastas = new frmCastas(db);
-            Hide();
-            vaiCastas.ShowDialog();
-        }
-
-        private void btnInsertTipoProduto_Click(object sender, EventArgs e)
-        {
-            frmInserirProduto inserirProduto = new frmInserirProduto(db);
-            Hide();
-            inserirProduto.ShowDialog();
-
-        }
+
+

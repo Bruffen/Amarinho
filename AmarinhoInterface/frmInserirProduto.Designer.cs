@@ -41,75 +41,82 @@
             // lbNomeProduto
             // 
             this.lbNomeProduto.AutoSize = true;
-            this.lbNomeProduto.Location = new System.Drawing.Point(13, 26);
+            this.lbNomeProduto.Location = new System.Drawing.Point(17, 32);
+            this.lbNomeProduto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNomeProduto.Name = "lbNomeProduto";
-            this.lbNomeProduto.Size = new System.Drawing.Size(90, 13);
+            this.lbNomeProduto.Size = new System.Drawing.Size(119, 17);
             this.lbNomeProduto.TabIndex = 0;
             this.lbNomeProduto.Text = "Nome do Produto";
             // 
             // lbTeorAlco
             // 
             this.lbTeorAlco.AutoSize = true;
-            this.lbTeorAlco.Location = new System.Drawing.Point(13, 60);
+            this.lbTeorAlco.Location = new System.Drawing.Point(17, 74);
+            this.lbTeorAlco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTeorAlco.Name = "lbTeorAlco";
-            this.lbTeorAlco.Size = new System.Drawing.Size(75, 13);
+            this.lbTeorAlco.Size = new System.Drawing.Size(98, 17);
             this.lbTeorAlco.TabIndex = 0;
             this.lbTeorAlco.Text = "Teor Alcoólico";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 97);
+            this.label2.Location = new System.Drawing.Point(17, 119);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(83, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Capacidade";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 26);
+            this.textBox1.Location = new System.Drawing.Point(147, 32);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
+            this.textBox1.Size = new System.Drawing.Size(189, 22);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(94, 57);
+            this.textBox2.Location = new System.Drawing.Point(125, 70);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(67, 20);
+            this.textBox2.Size = new System.Drawing.Size(88, 22);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(94, 94);
+            this.textBox3.Location = new System.Drawing.Point(125, 116);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(67, 20);
+            this.textBox3.Size = new System.Drawing.Size(88, 22);
             this.textBox3.TabIndex = 1;
             // 
             // btnInserirProduto
             // 
-            this.btnInserirProduto.Location = new System.Drawing.Point(177, 97);
+            this.btnInserirProduto.Location = new System.Drawing.Point(236, 119);
+            this.btnInserirProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnInserirProduto.Name = "btnInserirProduto";
-            this.btnInserirProduto.Size = new System.Drawing.Size(86, 58);
+            this.btnInserirProduto.Size = new System.Drawing.Size(115, 71);
             this.btnInserirProduto.TabIndex = 2;
             this.btnInserirProduto.Text = "Inserir Novo Produto";
             this.btnInserirProduto.UseVisualStyleBackColor = true;
             // 
             // btnVoltarTipoProduto
             // 
-            this.btnVoltarTipoProduto.Location = new System.Drawing.Point(12, 132);
+            this.btnVoltarTipoProduto.Location = new System.Drawing.Point(16, 162);
+            this.btnVoltarTipoProduto.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltarTipoProduto.Name = "btnVoltarTipoProduto";
-            this.btnVoltarTipoProduto.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltarTipoProduto.Size = new System.Drawing.Size(100, 28);
             this.btnVoltarTipoProduto.TabIndex = 3;
             this.btnVoltarTipoProduto.Text = "Voltar";
             this.btnVoltarTipoProduto.UseVisualStyleBackColor = true;
-            this.btnVoltarTipoProduto.Click += new System.EventHandler(this.btnVoltarTipoProduto_Click);
             // 
             // frmInserirProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 167);
+            this.ClientSize = new System.Drawing.Size(367, 206);
             this.Controls.Add(this.btnVoltarTipoProduto);
             this.Controls.Add(this.btnInserirProduto);
             this.Controls.Add(this.textBox3);
@@ -118,6 +125,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbTeorAlco);
             this.Controls.Add(this.lbNomeProduto);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInserirProduto";
             this.Text = "Novo Produto";
             this.Load += new System.EventHandler(this.frmInserirProduto_Load);
