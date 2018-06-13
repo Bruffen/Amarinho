@@ -15,27 +15,30 @@ namespace AmarinhoInterface
 
         public DataBase()
         {
-            DataBaseConnection = new SqlConnection("Data Source = DESKTOP-TSNGFLN; Initial Catalog = Amarinho; Integrated Security = True");
+            DataBaseConnection = new SqlConnection("Data Source = localhost; Initial Catalog = Amarinho; Integrated Security = True");
             DataBaseConnection.Open();
         }
 
         public void AdicionarCasta(int id, string nome, string local, string tipo, string desc)
         {
-            String query = "Insert into Casta " +
-                "values ({id}, '{nome}', '{local}', '{tipo}', '{desc}')";
+            String query = 
+                "Insert Casta (Casta_ID, Nome_Casta, Origem_Local, Casta_Tipo, Casta_Desc) " +
+                "values (" + id + ", '" + nome + "', '" + local + "', '" + tipo + "', '" + desc + "')";
             SqlCommand addCasta = new SqlCommand(query, DataBaseConnection);
+            addCasta.ExecuteNonQuery();
         }
 
         public void AdicionarTipoProduto(int id, string desc, float teor, float capacidade)
         {
             String query = "Insert into Tipo_Produto " +
-                "values ({id}, '{desc}', {teor}, {capacidade})";
-            SqlCommand addCasta = new SqlCommand(query, DataBaseConnection);
+                "values (" + id + ", '" + desc + "', " + teor + ", " + capacidade + ")";
+            SqlCommand addTipoProduto = new SqlCommand(query, DataBaseConnection);
+            addTipoProduto.ExecuteNonQuery();
         }
 
         public DataTable MostarTudo(string nomeTabela)
         {
-            String query = "select * from {nomeTabela}";
+            String query = "select * from " + nomeTabela;
             SqlCommand command = new SqlCommand(query, DataBaseConnection);
             SqlDataReader data = command.ExecuteReader();
             DataTable table = new DataTable();

@@ -22,7 +22,7 @@ namespace AmarinhoInterface
 
         private void frmListaProduto_Load(object sender, EventArgs e)
         {
-
+            gridListaProdutos.DataSource = db.MostarTudo("Tipo_Produto");
         }
     }
 }
