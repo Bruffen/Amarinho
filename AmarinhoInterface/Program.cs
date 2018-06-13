@@ -15,9 +15,13 @@ namespace AmarinhoInterface
         [STAThread]
         static void Main()
         {
+            DataBase db = new DataBase();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Produto());
+            Application.Run(new Produto(db));
+
+            db.DataBaseConnection.Close();
         }
     }
 }

@@ -12,9 +12,22 @@ namespace AmarinhoInterface
 {
     public partial class frmTProduto : Form
     {
-        public frmTProduto()
+        private DataBase db;
+
+        public frmTProduto(DataBase db)
         {
             InitializeComponent();
+            this.db = db;
+        }
+
+        private void comboBoxTProduto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmTProduto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

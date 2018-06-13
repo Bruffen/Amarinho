@@ -12,9 +12,11 @@ namespace AmarinhoInterface
 {
     public partial class frmCasta: Form
     {
-        public frmCasta()
+        private DataBase db;
+        public frmCasta(DataBase db)
         {
             InitializeComponent();
+            this.db = db;
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -29,8 +31,12 @@ namespace AmarinhoInterface
 
         private void btnVoltarMenuCastas_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             frmCastas voltaCastas = new frmCastas();
              Close();
+=======
+            frmCastas voltaCastas = new frmCastas(db);
+>>>>>>> master
             voltaCastas.Show();
            
             

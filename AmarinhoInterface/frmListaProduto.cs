@@ -12,9 +12,17 @@ namespace AmarinhoInterface
 {
     public partial class frmListaProduto : Form
     {
-        public frmListaProduto()
+        private DataBase db;
+
+        public frmListaProduto(DataBase db)
         {
             InitializeComponent();
+            this.db = db;
+        }
+
+        private void frmListaProduto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
