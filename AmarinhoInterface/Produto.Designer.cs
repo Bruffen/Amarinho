@@ -54,18 +54,11 @@
             // 
             // Produto
             // 
-            this.btnVenda.Location = new System.Drawing.Point(84, 181);
-            this.btnVenda.Name = "btnVenda";
-            this.btnVenda.Size = new System.Drawing.Size(110, 54);
-            this.btnVenda.TabIndex = 0;
-            this.btnVenda.Text = "Vendas";
-            this.btnVenda.UseVisualStyleBackColor = true;
-            this.btnVenda.Click += new System.EventHandler(this.button1_Click);
+            
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.btnVenda);
             this.Controls.Add(this.btnMTipoProduto);
             this.Controls.Add(this.btnMCastas);
             this.Name = "Produto";
@@ -90,15 +83,4 @@
 }
 
 
-            this.btnVenda.Location = new System.Drawing.Point(84, 181);
-            this.btnVenda.Name = "btnVenda";
-            this.btnVenda.Size = new System.Drawing.Size(110, 54);
-            this.btnVenda.TabIndex = 0;
-            this.btnVenda.Text = "Vendas";
-            this.btnVenda.UseVisualStyleBackColor = true;
-            this.btnVenda.Click += new System.EventHandler(this.venda_Click);
-            // 
-            // Form1
-            // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.btnVenda);
+       
