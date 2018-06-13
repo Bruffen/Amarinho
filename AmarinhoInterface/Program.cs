@@ -17,7 +17,7 @@ namespace AmarinhoInterface
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenuProduto());
+            Application.Run(new Produto());
         }
     }
 }

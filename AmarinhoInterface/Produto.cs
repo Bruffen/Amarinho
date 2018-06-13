@@ -17,9 +17,21 @@ namespace AmarinhoInterface
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void casta_Click(object sender, EventArgs e)
         {
+            frmCastas casta = new frmCastas();
+            casta.ShowDialog();
+        }
 
+        private void tipoProduto_Click(object sender, EventArgs e)
+        {
+            frmTipoProduto tipoProduto = new frmTipoProduto();
+            tipoProduto.ShowDialog();
+        }
+
+        private void venda_Click(object sender, EventArgs e)
+        {
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
