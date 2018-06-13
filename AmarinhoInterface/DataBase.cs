@@ -17,7 +17,9 @@ namespace AmarinhoInterface
         {
             DataBaseConnection = new SqlConnection("Data Source = localhost; Initial Catalog = Amarinho; Integrated Security = True");
             DataBaseConnection.Open();
+            
         }
+
 
         public void AdicionarCasta(int id, string nome, string local, string tipo, string desc)
         {
