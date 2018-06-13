@@ -21,8 +21,9 @@ namespace AmarinhoInterface
 
         public void AdicionarCasta(int id, string nome, string local, string tipo, string desc)
         {
-            String query = 
-                "Insert Casta (Casta_ID, Nome_Casta, Origem_Local, Casta_Tipo, Casta_Desc) " +
+            String query =
+                "Set Identity_Insert Casta ON " +
+                "Insert Casta(Casta_ID, Nome_Casta, Origem_Local, Casta_Tipo, Casta_Desc) " +
                 "values (" + id + ", '" + nome + "', '" + local + "', '" + tipo + "', '" + desc + "')";
             SqlCommand addCasta = new SqlCommand(query, DataBaseConnection);
             addCasta.ExecuteNonQuery();
@@ -30,10 +31,26 @@ namespace AmarinhoInterface
 
         public void AdicionarTipoProduto(int id, string desc, float teor, float capacidade)
         {
-            String query = "Insert into Tipo_Produto " +
+            String query =
+                "Set Identity_Insert Tipo_Produto ON " +
+                "Insert Tipo_Produto(Tipo_Produto_ID, Desc_Produto, Teor_Alcoolico, Capacidade_Produto " +
                 "values (" + id + ", '" + desc + "', " + teor + ", " + capacidade + ")";
             SqlCommand addTipoProduto = new SqlCommand(query, DataBaseConnection);
             addTipoProduto.ExecuteNonQuery();
+        }
+
+        public void RemoverCasta(int id)
+        {
+            String query = "Delete from Casta where Casta_ID = " + id;
+            SqlCommand removeCasta = new SqlCommand(query, DataBaseConnection);
+            removeCasta.ExecuteNonQuery();
+        }
+
+        public void RemoverTipoProduto(int id)
+        {
+            String query = "Delete from Tipo_Produto where Tipo_Produto_ID = " + id;
+            SqlCommand removeCasta = new SqlCommand(query, DataBaseConnection);
+            removeCasta.ExecuteNonQuery();
         }
 
         public DataTable MostarTudo(string nomeTabela)

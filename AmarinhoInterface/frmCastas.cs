@@ -16,6 +16,7 @@ namespace AmarinhoInterface
         public frmCastas(DataBase db)
         {
             InitializeComponent();
+            dataGridView1.MultiSelect = false;
             this.db = db;
         }
 
@@ -26,11 +27,9 @@ namespace AmarinhoInterface
 
         private void btnAddCasta_Click(object sender, EventArgs e)
         {
-
             frmCasta addcasta = new frmCasta(db);
             addcasta.ShowDialog();
             Hide();
-           
         }
 
         private void btnVoltarMenuProduto_Click(object sender, EventArgs e)
@@ -39,21 +38,21 @@ namespace AmarinhoInterface
                 , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
                
-
-                
-
                 Produto voltaMenu = new Produto(db);
-                Close();
                 voltaMenu.Show();
-               
+                Close();
             }
-           
-            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnRemoveCasta_Click(object sender, EventArgs e)
+        {
+            db.RemoverCasta(int.Parse(dataGridView1.SelectedRows[0].Cells["Casta_ID"].Value.ToString()));
+            frmCastas_Load(sender, e);
         }
     }
 }
