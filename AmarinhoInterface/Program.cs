@@ -19,7 +19,7 @@ namespace AmarinhoInterface
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Produto(db));
+            Application.Run(new frmListaProduto(db));
 
             db.DataBaseConnection.Close();
         }

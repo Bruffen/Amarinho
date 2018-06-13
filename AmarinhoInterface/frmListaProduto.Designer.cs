@@ -38,52 +38,48 @@
             // gridListaProdutos
             // 
             this.gridListaProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridListaProdutos.Location = new System.Drawing.Point(29, 37);
-            this.gridListaProdutos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridListaProdutos.Location = new System.Drawing.Point(22, 30);
             this.gridListaProdutos.Name = "gridListaProdutos";
-            this.gridListaProdutos.Size = new System.Drawing.Size(600, 314);
+            this.gridListaProdutos.Size = new System.Drawing.Size(450, 255);
             this.gridListaProdutos.TabIndex = 0;
             // 
             // btnVoltar3
             // 
-            this.btnVoltar3.Location = new System.Drawing.Point(17, 390);
-            this.btnVoltar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltar3.Location = new System.Drawing.Point(13, 317);
             this.btnVoltar3.Name = "btnVoltar3";
-            this.btnVoltar3.Size = new System.Drawing.Size(100, 28);
+            this.btnVoltar3.Size = new System.Drawing.Size(75, 23);
             this.btnVoltar3.TabIndex = 1;
             this.btnVoltar3.Text = "Voltar";
             this.btnVoltar3.UseVisualStyleBackColor = true;
             // 
             // btnAddProdutoLP
             // 
-            this.btnAddProdutoLP.Location = new System.Drawing.Point(491, 358);
-            this.btnAddProdutoLP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddProdutoLP.Location = new System.Drawing.Point(368, 291);
             this.btnAddProdutoLP.Name = "btnAddProdutoLP";
-            this.btnAddProdutoLP.Size = new System.Drawing.Size(139, 60);
+            this.btnAddProdutoLP.Size = new System.Drawing.Size(104, 49);
             this.btnAddProdutoLP.TabIndex = 2;
             this.btnAddProdutoLP.Text = "Inserir Novo Produto";
             this.btnAddProdutoLP.UseVisualStyleBackColor = true;
+            this.btnAddProdutoLP.Click += new System.EventHandler(this.btnAddProdutoLP_Click);
             // 
             // btnRemovProdutoLP
             // 
-            this.btnRemovProdutoLP.Location = new System.Drawing.Point(324, 358);
-            this.btnRemovProdutoLP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemovProdutoLP.Location = new System.Drawing.Point(243, 291);
             this.btnRemovProdutoLP.Name = "btnRemovProdutoLP";
-            this.btnRemovProdutoLP.Size = new System.Drawing.Size(139, 60);
+            this.btnRemovProdutoLP.Size = new System.Drawing.Size(104, 49);
             this.btnRemovProdutoLP.TabIndex = 2;
             this.btnRemovProdutoLP.Text = "Remover Produto";
             this.btnRemovProdutoLP.UseVisualStyleBackColor = true;
             // 
             // frmListaProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 433);
+            this.ClientSize = new System.Drawing.Size(499, 352);
             this.Controls.Add(this.btnRemovProdutoLP);
             this.Controls.Add(this.btnAddProdutoLP);
             this.Controls.Add(this.btnVoltar3);
             this.Controls.Add(this.gridListaProdutos);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmListaProduto";
             this.Text = "Lista de Produtos";
             this.Load += new System.EventHandler(this.frmListaProduto_Load);

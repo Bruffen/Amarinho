@@ -24,5 +24,12 @@ namespace AmarinhoInterface
         {
            // gridListaProdutos.DataSource = db.MostarTudo("Tipo_Produto");
         }
+
+        private void btnAddProdutoLP_Click(object sender, EventArgs e)
+        {
+            frmTProduto tproduto = new frmTProduto(db);
+            Hide();
+            tproduto.ShowDialog();
+        }
     }
 }
