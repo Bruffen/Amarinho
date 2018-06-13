@@ -78,11 +78,23 @@
     <Compile Include="frmInserirProduto.Designer.cs">
       <DependentUpon>frmInserirProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaProduto.Designer.cs">
+      <DependentUpon>frmListaProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTipoProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTipoProduto.Designer.cs">
       <DependentUpon>frmTipoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTProduto.Designer.cs">
+      <DependentUpon>frmTProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Produto.cs">
       <SubType>Form</SubType>
@@ -101,8 +113,14 @@
     <EmbeddedResource Include="frmInserirProduto.resx">
       <DependentUpon>frmInserirProduto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListaProduto.resx">
+      <DependentUpon>frmListaProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTipoProduto.resx">
       <DependentUpon>frmTipoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTProduto.resx">
+      <DependentUpon>frmTProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Produto.resx">
       <DependentUpon>Produto.cs</DependentUpon>
