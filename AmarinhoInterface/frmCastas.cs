@@ -21,5 +21,26 @@ namespace AmarinhoInterface
         {
 
         }
+
+        private void btnAddCasta_Click(object sender, EventArgs e)
+        {
+            frmCasta addcasta = new frmCasta();
+            addcasta.ShowDialog();
+            Hide();
+        }
+
+        private void btnVoltarMenuProduto_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Tem a certeza que pretende sair?", "Sair?"
+                , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+            {
+               
+                Produto voltaMenu = new Produto();
+                voltaMenu.Show();
+                Close();
+            }
+           
+            
+        }
     }
 }

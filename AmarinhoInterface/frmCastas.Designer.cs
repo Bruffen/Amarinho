@@ -37,10 +37,9 @@
             // 
             // btnRemoveCasta
             // 
-            this.btnRemoveCasta.Location = new System.Drawing.Point(324, 386);
-            this.btnRemoveCasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemoveCasta.Location = new System.Drawing.Point(243, 314);
             this.btnRemoveCasta.Name = "btnRemoveCasta";
-            this.btnRemoveCasta.Size = new System.Drawing.Size(163, 42);
+            this.btnRemoveCasta.Size = new System.Drawing.Size(122, 34);
             this.btnRemoveCasta.TabIndex = 0;
             this.btnRemoveCasta.Text = "Remover";
             this.btnRemoveCasta.UseVisualStyleBackColor = true;
@@ -48,42 +47,40 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 58);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(22, 47);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(656, 276);
+            this.dataGridView1.Size = new System.Drawing.Size(492, 224);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnAddCasta
             // 
-            this.btnAddCasta.Location = new System.Drawing.Point(523, 386);
-            this.btnAddCasta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddCasta.Location = new System.Drawing.Point(392, 314);
             this.btnAddCasta.Name = "btnAddCasta";
-            this.btnAddCasta.Size = new System.Drawing.Size(163, 42);
+            this.btnAddCasta.Size = new System.Drawing.Size(122, 34);
             this.btnAddCasta.TabIndex = 0;
             this.btnAddCasta.Text = "Adicionar";
             this.btnAddCasta.UseVisualStyleBackColor = true;
+            this.btnAddCasta.Click += new System.EventHandler(this.btnAddCasta_Click);
             // 
             // btnVoltarMenuProduto
             // 
-            this.btnVoltarMenuProduto.Location = new System.Drawing.Point(16, 390);
-            this.btnVoltarMenuProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltarMenuProduto.Location = new System.Drawing.Point(12, 317);
             this.btnVoltarMenuProduto.Name = "btnVoltarMenuProduto";
-            this.btnVoltarMenuProduto.Size = new System.Drawing.Size(129, 42);
+            this.btnVoltarMenuProduto.Size = new System.Drawing.Size(97, 34);
             this.btnVoltarMenuProduto.TabIndex = 2;
             this.btnVoltarMenuProduto.Text = "Voltar";
             this.btnVoltarMenuProduto.UseVisualStyleBackColor = true;
+            this.btnVoltarMenuProduto.Click += new System.EventHandler(this.btnVoltarMenuProduto_Click);
             // 
             // frmCastas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 443);
+            this.ClientSize = new System.Drawing.Size(536, 360);
             this.Controls.Add(this.btnVoltarMenuProduto);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAddCasta);
             this.Controls.Add(this.btnRemoveCasta);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCastas";
             this.Text = "Castas";
             this.Load += new System.EventHandler(this.frmCastas_Load);

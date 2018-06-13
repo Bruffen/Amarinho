@@ -20,12 +20,14 @@ namespace AmarinhoInterface
         private void casta_Click(object sender, EventArgs e)
         {
             frmCastas casta = new frmCastas();
+            Hide();
             casta.ShowDialog();
         }
 
         private void tipoProduto_Click(object sender, EventArgs e)
         {
             frmTipoProduto tipoProduto = new frmTipoProduto();
+            Hide();
             tipoProduto.ShowDialog();
         }
 
@@ -40,3 +42,14 @@ namespace AmarinhoInterface
         }
     }
 }
+
+
+
+        }
+
+        
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
