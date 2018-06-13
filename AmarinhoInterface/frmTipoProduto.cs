@@ -31,18 +31,15 @@ namespace AmarinhoInterface
                , MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
             {
 
-<<<<<<< HEAD
-                Produto voltaMenu = new Produto();
-=======
+
                 Produto voltaMenu = new Produto(db);
                 voltaMenu.Show();
->>>>>>> master
                 Close();
-                voltaMenu.ShowDialog();
+          
                 
             }
         }
-<<<<<<< HEAD
+
 
         private void btnAddTipoProduto_Click(object sender, EventArgs e)
         {
@@ -50,7 +47,3 @@ namespace AmarinhoInterface
         }
     }
 }
-=======
-    }
-}
->>>>>>> master

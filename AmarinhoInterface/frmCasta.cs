@@ -31,12 +31,8 @@ namespace AmarinhoInterface
 
         private void btnVoltarMenuCastas_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            frmCastas voltaCastas = new frmCastas();
-             Close();
-=======
+
             frmCastas voltaCastas = new frmCastas(db);
->>>>>>> master
             voltaCastas.Show();
            
             
